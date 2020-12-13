@@ -30,7 +30,7 @@ const h = dateFns.format(now, 'HH');
 const m = dateFns.format(now, 'mm');
 const s = dateFns.format(now, 'ss');
 
-const times = ['08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '22'];
+const times = ['08', '09', '10', '11', '12', '13', '14', '15', '16', '17'];
 
 for (let i = 0; i < times.length; i++) {
     const time = times[i];
@@ -174,27 +174,6 @@ if (textDivAttribute17 == h) {
     textDiv17.parentElement.classList.add("past")
 }
 
-const textDiv20 = document.getElementById("20");
-const textDivAttribute20 = textDiv20.getAttribute("id")
-
-if (textDivAttribute20 == h) {
-    textDiv20.parentElement.classList.add("present")
-} else if (textDivAttribute20 > h) {
-    textDiv20.parentElement.classList.add("future")
-} else if (textDivAttribute20 < h) {
-    textDiv20.parentElement.classList.add("past")
-}
-
-const textDiv22 = document.getElementById("22");
-const textDivAttribute22 = textDiv22.getAttribute("id")
-
-if (textDivAttribute22 == h) {
-    textDiv22.parentElement.classList.add("present")
-} else if (textDivAttribute22 > h) {
-    textDiv22.parentElement.classList.add("future")
-} else if (textDivAttribute22 < h) {
-    textDiv22.parentElement.classList.add("past")
-}
 
 $('.saveBtn').click(function () {
     const time = $(this).siblings('div.time-block').text();
