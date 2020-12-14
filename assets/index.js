@@ -1,3 +1,5 @@
+const dateFns = require("date-fns");
+
 dateFns.isToday(new Date())
 // create current date and time by using date-fns
 const clock = document.querySelector(".clock");
