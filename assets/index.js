@@ -1,4 +1,4 @@
-const dateFns = require("date-fns");
+// const datefns = require("date-fns");
 
 dateFns.isToday(new Date())
 // create current date and time by using date-fns
